@@ -16,7 +16,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-
 Welcome! I am a PhD candidate at [Federation University Australia, Australia](https://federation.edu.au/), and I am also affiliated with [CSIRO's Data61](https://research.csiro.au/cybersecurity-quantum-systems/). During my candidature, I have been supported by the [Data61 PhD Scholarship](https://www.csiro.au/en/careers/scholarships-student-opportunities/postgraduate-programs-and-scholarships/data61-scholarships).
 
 I hold a Master of Technology degree from [Federation University Australia, Australia](https://federation.edu.au/), specializing in enterprise systems and business analytics. Before that, I completed my Bachelor of Computer Science from [Brawijaya University, Indonesia](https://ub.ac.id/).
