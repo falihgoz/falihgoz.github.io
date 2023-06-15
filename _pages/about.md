@@ -22,4 +22,4 @@ I hold a Master of Technology degree from [Federation University Australia, Aust
 
 I am interested in the fields of `Artificial Intelligence, Graph Learning, and Anomaly Detection`. Recently, my research has been centred around harnessing the capabilities of graph neural networks to detect anomalies. In the past year, I have been actively applying this technique to different domains, such as cyber-physical systems and the detection of brain diseases.
 
-E-mail: `f[dot]febrinanto[at]federation[dot]edu[dot]au; falih[dot]febrinanto[at]csiro[dot]data61[dot]au`
+E-mail: `f.falih.outlook.com; f.febrinanto@federation.edu.au; falih.febrinanto@data61.csiro.au`
