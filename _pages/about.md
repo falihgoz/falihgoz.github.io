@@ -10,16 +10,27 @@ profile:
   image_circular: true # crops the image to make it circular
   address: >
 
-news: true  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
+news: true # includes a list of news items
+latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
-Welcome! I am a PhD candidate at [Federation University Australia, Australia](https://federation.edu.au/), and I am also affiliated with [CSIRO's Data61](https://research.csiro.au/cybersecurity-quantum-systems/). During my candidature, I have been supported by the [Data61 PhD Scholarship](https://www.csiro.au/en/careers/scholarships-student-opportunities/postgraduate-programs-and-scholarships/data61-scholarships).
+# Welcome!
 
-I hold a Master of Technology degree from [Federation University Australia, Australia](https://federation.edu.au/), specializing in enterprise systems and business analytics. Before that, I completed my Bachelor of Computer Science from [Brawijaya University, Indonesia](https://ub.ac.id/).
+I am a **Seasonal Academic** at [Federation University Australia](https://federation.edu.au/).
+I completed my **PhD in IT** at Federation University, supported by the [Data61 PhD Scholarship](https://www.csiro.au/en/careers/scholarships-student-opportunities/postgraduate-programs-and-scholarships/data61-scholarships).
 
-I am interested in the fields of `Artificial Intelligence, Graph Learning, and Anomaly Detection`. Recently, my research has been centred around harnessing the capabilities of graph neural networks to detect anomalies. In the past year, I have been actively applying this technique to different domains, such as cyber-physical systems and the detection of brain diseases.
+I also hold a **Master of Technology** in Enterprise Systems and Business Analytics from Federation University, and a **Bachelor of Computer Science** from [Brawijaya University, Indonesia](https://ub.ac.id/).
 
-E-mail: `f.falih.outlook.com; f.febrinanto@federation.edu.au; falih.febrinanto@data61.csiro.au`
+My research interests include:
+
+- Signal Processing
+- Artificial Intelligence
+- Graph Learning
+- Anomaly Detection
+
+I have been developing novel approaches for classification and anomaly detection, applying these techniques to domains such as **cyber-physical systems**, **audio signal processing**, and **brain disease detection**.
+
+📧 Contact:
+`f.falih.outlook.com` | `f.febrinanto@federation.edu.au`

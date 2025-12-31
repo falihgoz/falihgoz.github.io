@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-01-15 07:59:00-0400
+date: 2025-10-03 07:59:00-0400
 inline: true
 related_posts: false
 ---
 
-I will be presenting my work at Doctoral Consortium, WSDM 2023, Singapore.
+I had a short teaching at Hebei University of Science & Technology, China, an offshore partner of Federation University Australia.
