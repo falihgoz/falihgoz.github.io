@@ -1,4 +1,8 @@
-
-          <div class="publications">
-            {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true]* %}
-          </div>
+<div class="publications">
+  {% bibliography -f {{ site.scholar.bibliography }} --max 5 %}
+</div>
+<div class="view-more" style="text-align: center; margin-top: 1.5rem">
+  <a href="{{ '/publications/' | relative_url }}" style="font-weight: 500"
+    >View more &rarr;</a
+  >
+</div>
