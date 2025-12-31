@@ -1045,7 +1045,7 @@ nav[data-toggle=toc] .nav-link.active:hover {
 }
 .about-bio p {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.5;
   color: var(--global-text-color);
   margin-bottom: 0.75rem;
 }
