@@ -112,19 +112,21 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           <span class="font-weight-bold">Falih</span> G. Febrinanto
-          </h1>
-          <p class="desc">Ballarat, VIC 3350, Australia</p>
-        </header>
+        <!-- about.html - Enhanced Layout -->
+<div class="post about-page">
+  <header class="post-header">
+    <h1 class="post-title">
+      <span class="font-weight-bold">Falih</span>
+      G. Febrinanto
+    </h1>
+    <p class="desc"></p>
+  </header>
 
-        <article>
-          <div class="profile float-right">
-
-              <figure>
+  <article>
+    <!-- Hero Section: Profile on LEFT -->
+    <section class="about-hero">
+      <div class="about-hero-profile">
+<figure>
 
   <picture>
     
@@ -134,34 +136,15 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded-circle" width="auto" height="auto" alt="prof_pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/prof_pic.jpg" class="profile-image-circle" width="auto" height="auto" alt="prof_pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
-
-            <div class="social">
-              <div class="contact-icons">
-                <a href="https://orcid.org/0000-0002-7932-4571" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
-            <a href="https://scholar.google.com/citations?user=wqzYPTcAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
-            <a href="https://www.scopus.com/authid/detail.uri?authorId=57208472094" title="Scopus" rel="external nofollow noopener" target="_blank"><i class="ai ai-scopus"></i></a>
-            <a href="https://github.com/falihgoz" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/falihfeb" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
-            
-
-              </div>
-
-              <div class="contact-note">
-                
-              </div>
-            </div>
-            <div class="address">
-              
-            </div>
-          </div>
-
-          <div class="clearfix">
-            <h1 id="welcome">Welcome!</h1>
+</div>
+      <div class="about-hero-content">
+        <div class="about-bio">
+<h1 id="welcome">Welcome!</h1>
 
 <p>I am a <strong>Seasonal Academic</strong> at <a href="https://federation.edu.au/" rel="external nofollow noopener" target="_blank">Federation University Australia</a>.
 I completed my <strong>PhD in IT</strong> at Federation University, supported by the <a href="https://www.csiro.au/en/careers/scholarships-student-opportunities/postgraduate-programs-and-scholarships/data61-scholarships" rel="external nofollow noopener" target="_blank">Data61 PhD Scholarship</a>.</p>
@@ -179,13 +162,31 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
 
 <p>I have been developing novel approaches for classification and anomaly detection, applying these techniques to domains such as <strong>cyber-physical systems</strong>, <strong>audio signal processing</strong>, and <strong>brain disease detection</strong>.</p>
 
-<p>📧 Contact:
-<code class="language-plaintext highlighter-rouge">f.falih.outlook.com</code> | <code class="language-plaintext highlighter-rouge">f.febrinanto@federation.edu.au</code></p>
+<p><strong><i class="fas fa-envelope"></i> Contact:</strong>
+<code class="language-plaintext highlighter-rouge">f.falih@outlook.com</code> | <code class="language-plaintext highlighter-rouge">f.febrinanto@federation.edu.au</code></p>
+</div>
+        <div class="about-social">
+          <div class="contact-icons">
+<a href="https://orcid.org/0000-0002-7932-4571" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=wqzYPTcAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=57208472094" title="Scopus" rel="external nofollow noopener" target="_blank"><i class="ai ai-scopus"></i></a>
+            <a href="https://github.com/falihgoz" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/falihfeb" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+            
+</div>
+          
+          <div class="contact-note"></div>
+          
+        </div>
+      </div>
+    </section>
 
-          </div>
-
-          <!-- News -->
-          <h2><a href="/news/" style="color: inherit;">news</a></h2>          <div class="news">
+    <!-- News Section -->
+    <section class="about-section">
+      <h2 class="section-title">
+        <span class="section-indicator"></span>
+        <a href="/news/" style="color: inherit">news</a>
+      </h2>          <div class="news">
             <div class="table-responsive">
               <table class="table table-sm table-borderless">
               
@@ -213,12 +214,17 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
               </table>
             </div>
           </div>
+    </section>
 
-          <!-- Latest posts -->
-          
+    <!-- Latest Posts Section -->
+    
 
-          <!-- Selected papers -->
-          <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
+    <!-- Selected Publications Section -->
+    <section class="about-section">
+      <h2 class="section-title">
+        <span class="section-indicator"></span>
+        <a href="/publications/" style="color: inherit">recent publications</a>
+      </h2>
 <div class="publications">
   <ol class="bibliography">
 <li>
@@ -230,11 +236,11 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
     <div class="title">Refined causal graph structure learning via curvature for brain disease classification</div>
     <!-- Author -->
     <div class="author">
-       Falih Gozi Febrinanto, Adonia Simango, Chengpei Xu, and
-      <span class="more-authors" title="click to view 4 more authors" onclick="
+       Falih Gozi Febrinanto, Adonia Simango, Chengpei Xu, Jingjing Zhou, Jiangang Ma, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Jingjing Zhou, Jiangang Ma, Sonika Tyagi, Feng Xia' : '4 more authors';
+                var more_authors_text = element.text() == '2 more authors' ? 'Sonika Tyagi, Feng Xia' : '2 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -242,7 +248,7 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">4 more authors</span>
+              ">2 more authors</span>
 </div>
 
     <!-- Journal/Book title and date -->
@@ -270,11 +276,11 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
     <div class="title">Rehearsal with Auxiliary-Informed Sampling for Audio Deepfake Detection</div>
     <!-- Author -->
     <div class="author">
-       Falih Gozi Febrinanto, Kristen Moore, Chandra Thapa, and
-      <span class="more-authors" title="click to view 3 more authors" onclick="
+       Falih Gozi Febrinanto, Kristen Moore, Chandra Thapa, Jiangang Ma, Vidya Saikrishna, and
+      <span class="more-authors" title="click to view 1 more author" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Jiangang Ma, Vidya Saikrishna, Feng Xia' : '3 more authors';
+                var more_authors_text = element.text() == '1 more author' ? 'Feng Xia' : '1 more author';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -282,7 +288,7 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">3 more authors</span>
+              ">1 more author</span>
 </div>
 
     <!-- Journal/Book title and date -->
@@ -310,11 +316,11 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
     <div class="title">Entropy causal graphs for multivariate time series anomaly detection</div>
     <!-- Author -->
     <div class="author">
-       Falih Gozi Febrinanto, Kristen Moore, Chandra Thapa, and
-      <span class="more-authors" title="click to view 4 more authors" onclick="
+       Falih Gozi Febrinanto, Kristen Moore, Chandra Thapa, Mujie Liu, Vidya Saikrishna, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Mujie Liu, Vidya Saikrishna, Jiangang Ma, Feng Xia' : '4 more authors';
+                var more_authors_text = element.text() == '2 more authors' ? 'Jiangang Ma, Feng Xia' : '2 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -322,7 +328,7 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">4 more authors</span>
+              ">2 more authors</span>
 </div>
 
     <!-- Journal/Book title and date -->
@@ -350,11 +356,11 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
     <div class="title">GraphDART: Graph Distillation for Efficient Advanced Persistent Threat Detection</div>
     <!-- Author -->
     <div class="author">
-       Saba Fathi Rabooki, Bowen Li, Falih Gozi Febrinanto, and
-      <span class="more-authors" title="click to view 4 more authors" onclick="
+       Saba Fathi Rabooki, Bowen Li, Falih Gozi Febrinanto, Ciyuan Peng, Elham Naghizade, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Ciyuan Peng, Elham Naghizade, Fengling Han, Feng Xia' : '4 more authors';
+                var more_authors_text = element.text() == '2 more authors' ? 'Fengling Han, Feng Xia' : '2 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -362,7 +368,7 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">4 more authors</span>
+              ">2 more authors</span>
 </div>
 
     <!-- Journal/Book title and date -->
@@ -390,11 +396,11 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
     <div class="title">Graph Learning</div>
     <!-- Author -->
     <div class="author">
-       Feng Xia, Ciyuan Peng, Jing Ren, and
-      <span class="more-authors" title="click to view 5 more authors" onclick="
+       Feng Xia, Ciyuan Peng, Jing Ren, Falih Gozi Febrinanto, Renqiang Luo, and
+      <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '5 more authors' ? 'Falih Gozi Febrinanto, Renqiang Luo, Vidya Saikrishna, Shuo Yu, Xiangjie Kong' : '5 more authors';
+                var more_authors_text = element.text() == '3 more authors' ? 'Vidya Saikrishna, Shuo Yu, Xiangjie Kong' : '3 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -402,7 +408,7 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">5 more authors</span>
+              ">3 more authors</span>
 </div>
 
     <!-- Journal/Book title and date -->
@@ -427,26 +433,77 @@ I completed my <strong>PhD in IT</strong> at Federation University, supported by
   <a href="/publications/" style="font-weight: 500">View more →</a>
 </div>
 
+    </section>
+  </article>
+</div>
 
-          <!-- Social
-            <div class="social">
-              <div class="contact-icons">
-                <a href="https://orcid.org/0000-0002-7932-4571" title="ORCID"><i class="ai ai-orcid"></i></a>
+<!-- Contact Footer Section -->
+
+<!-- <section class="contact-footer">
+  <div class="contact-footer-grid"> -->
+<!-- Office Column -->
+
+<!-- <div class="contact-footer-col">
+      <div class="contact-footer-header">
+        <i class="fas fa-building"></i>
+        <h3>Office</h3>
+      </div>
+      <div class="contact-footer-body">
+        <p>Federation University Australia</p>
+        <p>School of Science, Engineering and IT</p>
+        <p>Ballarat, VIC 3350</p>
+        <p>Australia</p>
+      </div>
+    </div> -->
+
+<!-- Contact Column -->
+<!-- <div class="contact-footer-col">
+      <div class="contact-footer-header">
+        <i class="fas fa-envelope"></i>
+        <h3>Contact</h3>
+      </div>
+      <div class="contact-footer-body">
+        <a href="mailto:f.febrinanto@federation.edu.au"
+          >f.febrinanto@federation.edu.au</a
+        >
+        <p>f.falih@outlook.com</p>
+        <div class="contact-footer-social"><a href="https://orcid.org/0000-0002-7932-4571" title="ORCID"><i class="ai ai-orcid"></i></a>
             <a href="https://scholar.google.com/citations?user=wqzYPTcAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
             <a href="https://www.scopus.com/authid/detail.uri?authorId=57208472094" title="Scopus"><i class="ai ai-scopus"></i></a>
             <a href="https://github.com/falihgoz" title="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/falihfeb" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             
-
-              </div>
-
-              <div class="contact-note">
-                
-              </div>
-            </div> -->
-        </article>
-
 </div>
+      </div>
+    </div> -->
+
+<!-- Location Column -->
+<!-- <div class="contact-footer-col">
+      <div class="contact-footer-header">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+      </div>
+      <div class="contact-footer-body">
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.0!2d143.8503!3d-37.5622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad144f2dc6a2b2d%3A0x4045675218cd850!2sFederation%20University%20Australia!5e0!3m2!1sen!2sau!4v1"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <a
+          href="https://maps.google.com/?q=Federation+University+Australia+Ballarat"
+          target="_blank"
+          class="directions-link"
+        >
+          Get Directions →
+        </a>
+      </div>
+    </div>
+  </div> -->
+<!-- </section> -->
 
       
     </div>
