@@ -3,7 +3,13 @@ layout: page
 permalink: /publications/
 title: publications
 description:
-years: [2025, 2024, 2023, 2022, 2021, 2019]
+topics:
+  - name: Graph Learning
+    description: Research on graph neural networks, graph representation learning, and network analysis
+  - name: Signal Processing
+    description: Techniques for analyzing and modeling signals across time, space, and/or frequency domains
+  - name: Other Applications
+    description: Miscellaneous research applications
 nav: true
 nav_order: 1
 ---
@@ -12,10 +18,11 @@ nav_order: 1
 
 <div class="publications">
 
-{%- for y in page.years %}
+{%- for topic in page.topics %}
 
-<h2 class="year">{{y}}</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @*[year={{y}}]* %}
+<h2 class="topic">{{ topic.name }}</h2>
+<p class="topic-description" style="color: var(--global-text-color-light); margin-bottom: 1rem; font-style: italic;">{{ topic.description }}</p>
+  {% bibliography -f {{ site.scholar.bibliography }} -q @*[topic={{ topic.name }}]* %}
 {% endfor %}
 
 </div>
