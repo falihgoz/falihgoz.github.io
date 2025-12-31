@@ -2,10 +2,10 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ballarat, VIC 3350, Australia #PhD candidate at <a href='#'>Federation University Australia</a> and at <a href='#'>CSIRO's Data61</a>.
+subtitle: # Ballarat, VIC 3350, Australia PhD candidate at <a href='#'>Federation University Australia</a> and at <a href='#'>CSIRO's Data61</a>.
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   address: >
@@ -32,5 +32,5 @@ My research interests include:
 
 I have been developing novel approaches for classification and anomaly detection, applying these techniques to domains such as **cyber-physical systems**, **audio signal processing**, and **brain disease detection**.
 
-📧 Contact:
-`f.falih.outlook.com` | `f.febrinanto@federation.edu.au`
+**<i class="fas fa-envelope"></i> Contact:**
+`f.falih@outlook.com` | `f.febrinanto@federation.edu.au`

@@ -2,85 +2,140 @@
 layout: default
 ---
 
-<!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
+<!-- about.html - Enhanced Layout -->
+<div class="post about-page">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == "blank" -%}<span class="font-weight-bold"
+        >{{ site.first_name }}</span
+      >
+      {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%-
+      endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+  <article>
+    <!-- Hero Section: Profile on LEFT -->
+    {% if page.profile -%}
+    <section class="about-hero">
+      <div class="about-hero-profile">
+        {%- if page.profile.image %} {%- assign profile_image_path =
+        page.profile.image | prepend: 'assets/img/' -%} {% include figure.html
+        path=profile_image_path class="profile-image-circle"
+        alt=page.profile.image -%} {% endif -%}
+      </div>
+      <div class="about-hero-content">
+        <div class="about-bio">{{ content }}</div>
+        {%- if page.social %}
+        <div class="about-social">
+          <div class="contact-icons">{% include social.html %}</div>
+          {% if site.contact_note %}
+          <div class="contact-note">{{ site.contact_note }}</div>
+          {% endif %}
+        </div>
+        {%- endif %}
+      </div>
+    </section>
+    {%- endif %}
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
+    <!-- News Section -->
+    {% if page.news and site.announcements.enabled -%}
+    <section class="about-section">
+      <h2 class="section-title">
+        <span class="section-indicator"></span>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      </h2>
+      {%- include news.html limit=true %}
+    </section>
+    {%- endif %}
 
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
+    <!-- Latest Posts Section -->
+    {% if page.latest_posts -%}
+    <section class="about-section">
+      <h2 class="section-title">
+        <span class="section-indicator"></span>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit"
+          >latest posts</a
+        >
+      </h2>
+      {%- include latest_posts.html %}
+    </section>
+    {%- endif %}
 
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-            </div>
-            {%- endif %}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
-          </div>
-          {%- endif %}
-
-          <div class="clearfix">
-            {{ content }}
-          </div>
-
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
-
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
-
-          <!-- Social
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-            </div>
-          {%- endif %} -->
-        </article>
-
+    <!-- Selected Publications Section -->
+    {% if page.selected_papers -%}
+    <section class="about-section">
+      <h2 class="section-title">
+        <span class="section-indicator"></span>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit"
+          >recent publications</a
+        >
+      </h2>
+      {%- include selected_papers.html %}
+    </section>
+    {%- endif %}
+  </article>
 </div>
+
+<!-- Contact Footer Section -->
+
+<!-- <section class="contact-footer">
+  <div class="contact-footer-grid"> -->
+<!-- Office Column -->
+
+<!-- <div class="contact-footer-col">
+      <div class="contact-footer-header">
+        <i class="fas fa-building"></i>
+        <h3>Office</h3>
+      </div>
+      <div class="contact-footer-body">
+        <p>Federation University Australia</p>
+        <p>School of Science, Engineering and IT</p>
+        <p>Ballarat, VIC 3350</p>
+        <p>Australia</p>
+      </div>
+    </div> -->
+
+<!-- Contact Column -->
+<!-- <div class="contact-footer-col">
+      <div class="contact-footer-header">
+        <i class="fas fa-envelope"></i>
+        <h3>Contact</h3>
+      </div>
+      <div class="contact-footer-body">
+        <a href="mailto:f.febrinanto@federation.edu.au"
+          >f.febrinanto@federation.edu.au</a
+        >
+        <p>f.falih@outlook.com</p>
+        <div class="contact-footer-social">{% include social.html %}</div>
+      </div>
+    </div> -->
+
+<!-- Location Column -->
+<!-- <div class="contact-footer-col">
+      <div class="contact-footer-header">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+      </div>
+      <div class="contact-footer-body">
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.0!2d143.8503!3d-37.5622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad144f2dc6a2b2d%3A0x4045675218cd850!2sFederation%20University%20Australia!5e0!3m2!1sen!2sau!4v1"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <a
+          href="https://maps.google.com/?q=Federation+University+Australia+Ballarat"
+          target="_blank"
+          class="directions-link"
+        >
+          Get Directions →
+        </a>
+      </div>
+    </div>
+  </div> -->
+<!-- </section> -->
