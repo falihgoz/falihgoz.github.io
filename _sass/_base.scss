@@ -19,6 +19,11 @@ strong {
   color: var(--global-text-color);
 }
 
+p {
+  max-width: 70ch;
+  margin-bottom: 1.2em;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -1062,6 +1067,11 @@ nav[data-toggle="toc"] {
 .about-page {
   .post-header {
     margin-bottom: 2rem;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
   }
 }
 
@@ -1094,6 +1104,7 @@ nav[data-toggle="toc"] {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center 20%;
     border: 4px solid var(--global-bg-color);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1117,6 +1128,7 @@ nav[data-toggle="toc"] {
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
+      object-position: center 20%;
       border: 4px solid var(--global-bg-color);
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
