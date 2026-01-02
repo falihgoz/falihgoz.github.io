@@ -1151,6 +1151,35 @@ nav[data-toggle="toc"] {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  // Header container groups name + subtitle together
+  .about-header {
+    .post-title {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0.375rem; // Tight spacing to subtitle (6px at base font)
+      margin-top: 0;
+      color: var(--global-text-color);
+
+      @media (min-width: 768px) {
+        font-size: 2.25rem;
+      }
+    }
+
+    .desc {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--global-text-color-light);
+      margin-bottom: 0;
+      margin-top: 0;
+
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
 
 .about-bio {

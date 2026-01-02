@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: # Ballarat, VIC 3350, Australia PhD candidate at <a href='#'>Federation University Australia</a> and at <a href='#'>CSIRO's Data61</a>.
+subtitle: Seasonal Academic · Federation University Australia
 
 profile:
   align: left
@@ -15,8 +15,6 @@ latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-
-# Welcome!
 
 I am a **Seasonal Academic** at [Federation University Australia](https://federation.edu.au/).
 I completed my **PhD in IT** at Federation University, supported by the [Data61 PhD Scholarship](https://www.csiro.au/en/careers/scholarships-student-opportunities/postgraduate-programs-and-scholarships/data61-scholarships).
