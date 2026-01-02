@@ -30,5 +30,5 @@ My research interests include:
 
 I have been developing novel approaches for classification and anomaly detection, applying these techniques to domains such as **cyber-physical systems**, **audio signal processing**, and **brain disease detection**.
 
-**`<i class="fas fa-envelope"></i>` Contact:**
+**<i class="fas fa-envelope"></i> Contact:**
 `f.falih@outlook.com` | `f.febrinanto@federation.edu.au`
