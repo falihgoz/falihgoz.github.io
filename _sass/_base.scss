@@ -1154,6 +1154,12 @@ nav[data-toggle="toc"] {
 
   // Header container groups name + subtitle together
   .about-header {
+    text-align: center; // Center on mobile to match profile picture
+
+    @media (min-width: 768px) {
+      text-align: left; // Left-align on desktop
+    }
+
     .post-title {
       font-size: 2rem;
       font-weight: 700;
@@ -1200,6 +1206,7 @@ nav[data-toggle="toc"] {
   ol {
     margin-left: 1.25rem;
     margin-bottom: 1rem;
+    text-align: left; // Keep lists left-aligned even on mobile for readability
 
     li {
       margin-bottom: 0.25rem;
@@ -1214,6 +1221,11 @@ nav[data-toggle="toc"] {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    justify-content: center; // Center on mobile to match profile
+
+    @media (min-width: 768px) {
+      justify-content: flex-start; // Left-align on desktop
+    }
 
     a {
       display: inline-flex;

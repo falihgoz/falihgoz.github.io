@@ -20,8 +20,8 @@ layout: default
             {% if site.title == "blank" -%}<span class="font-weight-bold"
               >{{ site.first_name }}</span
             >
-            {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%-
-            endif %}
+            {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title
+            }}{%- endif %}
           </h1>
           {% if page.subtitle -%}
           <p class="desc">{{ page.subtitle }}</p>
@@ -45,7 +45,7 @@ layout: default
     <section class="about-section">
       <h2 class="section-title">
         <span class="section-indicator"></span>
-        news
+        News
       </h2>
       {%- include news.html limit=true %}
     </section>
@@ -70,7 +70,7 @@ layout: default
     <section class="about-section">
       <h2 class="section-title">
         <span class="section-indicator"></span>
-        recent publications
+        Recent Publications
       </h2>
       {%- include selected_papers.html %}
     </section>
